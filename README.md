@@ -4,12 +4,12 @@ This is the terraform code necessary to start working with the AWS cloud and sto
 
 ## File structure
 
-┣ 📂bucketforstate
-┃ ┣ 📜main.tf
-┃ ┣ 📜provider.tf
-┣ 📂project1
-┃ ┣ 📜main.tf
-┃ ┗ 📜provider.tf
+        ┣ 📂bucketforstate
+        ┃ ┣ 📜main.tf
+        ┃ ┣ 📜provider.tf
+        ┣ 📂project1
+        ┃ ┣ 📜main.tf
+        ┃ ┗ 📜provider.tf
 
 On the Folder __buckerforstate__ I have resources to create a bucket and a dynamodb table for state locking, those resources are using a local state because they're the first thing I need to do, however, I prefer to have it in terraform rather than have to use the UI. Besides, this bucket and table can be reused for many other projects in the future, not just one.
 
